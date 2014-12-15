@@ -1,0 +1,9 @@
+---
+title: "helllarious markddown test"
+author: "helllarious"
+date: "Monday, December 15, 2014"
+output: html_document
+---
+```{r}
+summary(cars)
+```
