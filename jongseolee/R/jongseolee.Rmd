@@ -1,5 +1,5 @@
 ---
-title: "This is jongseolee's Rmd Test"
+title: "jongseolee's Rmd File Testing"
 output:
   html_document:
     keep_md: yes
