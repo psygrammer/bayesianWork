@@ -10,7 +10,7 @@ def calculate(ll,prob_smoke):
 def main():
     ll = sys.argv[1]
     prob_smoke = sys.argv[2]
-    print "%.2f" % calculate(prob_smoke)
+    print "%.2f" % calculate(ll,prob_smoke)
 
 
 if __name__ == "__main__":
