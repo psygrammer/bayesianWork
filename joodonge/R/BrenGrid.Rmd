@@ -1,0 +1,13 @@
+source("DBDA2E-utilities.R")    # Load the definitions of graphics functions etc.
+source("BernGrid.R")            # Load the definition of the BernGrid function
+source("openGraphSaveGraph.R")  # Load the definition of the saveGraph function
+
+Theta = seq( 0 , 1 , length=1001 )  # Specify fine comb for Theta.
+pTheta = pmin( Theta , 1-Theta )    # Triangular shape for pTheta.
+pTheta = pTheta/sum(pTheta)         # Make pTheta sum to 1.0
+Data = c(rep(0,3),rep(l,D)          # Same as c(0,0,0,1). 25% heads with N=4.
+
+openGraph(width=5,height=7)  # Open a graphics window,
+posterior = BernGrid( Theta, pTheta , Data , plotType="Bars" , showCentTend="Mode" , showHDI=TRUE , showpD=FALSE )
+saveGraph(fi1e="BernGridExample",type="jpg")
+

@@ -1,0 +1,8 @@
+# Create summary values of Data
+z = sum( Data ) # number of l's in Data
+N = length( Data )
+# Compute the Bernoulli likelihood at each value of Theta:
+pDataGivenTheta = Theta^z * (l-Theta)^(N-z)
+# Compute the evidence and the posterior via Bayes'rule:
+pData = sum( pDataGivenTheta * pTheta )
+pThetaGivenData = pDataGivenTheta * pTheta / pData 
